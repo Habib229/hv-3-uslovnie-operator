@@ -89,7 +89,7 @@ public class Main {
         System.out.println();
 
         System.out.println("Задача 7");
-        int one = 23;
+        int one = 20;
         int two = 20;
         int three = 20;
         boolean one1 = one > two && one > three;
@@ -100,7 +100,12 @@ public class Main {
         if (two1) {
             System.out.println(two);
         } else {
-            System.out.println(three);
+            if (three > one && three > two){
+                System.out.println(three);
+            } else {
+                System.out.println(one);
+            }
+
         }
     }
 }
